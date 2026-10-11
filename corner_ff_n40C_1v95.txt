@@ -1,0 +1,33 @@
+Startpoint: resetn (input port clocked by clk)
+Endpoint: mem_la_write (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.000    0.000   clock network delay (propagated)
+   2.000    2.000 ^ input external delay
+   0.000    2.000 ^ resetn (in)
+   0.059    2.059 ^ input172/X (sky130_fd_sc_hd__buf_2)
+   0.027    2.087 v _8571_/Y (sky130_fd_sc_hd__inv_1)
+   0.122    2.208 v place891/X (sky130_fd_sc_hd__buf_4)
+   0.305    2.513 ^ _8971_/Y (sky130_fd_sc_hd__nor2_1)
+   0.347    2.860 ^ output267/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.000    2.860 ^ mem_la_write (out)
+            2.860   data arrival time
+
+  10.000   10.000   clock clk (rise edge)
+   0.000   10.000   clock network delay (propagated)
+   0.000   10.000   clock reconvergence pessimism
+  -2.000    8.000   output external delay
+            8.000   data required time
+-----------------------------------------------------------
+            8.000   data required time
+           -2.860   data arrival time
+-----------------------------------------------------------
+            5.140   slack (MET)
+
+
+wns max 0.00
+tns max 0.00

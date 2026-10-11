@@ -1,0 +1,1 @@
+./synth_all.sh: line 15: yowasp-yosys: command not found

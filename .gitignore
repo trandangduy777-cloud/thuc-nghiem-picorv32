@@ -1,0 +1,4 @@
+*.vcd
+sky130.lib
+*.o
+*.out

@@ -1,0 +1,33 @@
+
+4. Printing statistics.
+
+=== picorv32 ===
+
+   Number of wires:               2230
+   Number of wire bits:          10102
+   Number of public wires:         214
+   Number of public wire bits:    2559
+   Number of ports:                 27
+   Number of port bits:            409
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4926
+     $scopeinfo                      2
+     BUFG                            1
+     CARRY4                        189
+     FDRE                         1192
+     FDSE                           45
+     IBUF                          102
+     INV                           478
+     LUT1                            6
+     LUT2                          592
+     LUT3                          602
+     LUT4                          132
+     LUT5                          369
+     LUT6                          782
+     MUXF7                          88
+     MUXF8                          17
+     OBUF                          307
+     RAM64M                         22
+

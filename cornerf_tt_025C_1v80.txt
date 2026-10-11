@@ -1,0 +1,46 @@
+Startpoint: latched_stalu$_SDFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: reg_next_pc[28]$_SDFFE_PN0P_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.856    0.856   clock network delay (propagated)
+   0.000    0.856 ^ latched_stalu$_SDFFE_PN0P_/CLK (sky130_fd_sc_hd__dfxtp_2)
+   0.570    1.426 ^ latched_stalu$_SDFFE_PN0P_/Q (sky130_fd_sc_hd__dfxtp_2)
+   0.450    1.877 v _6439_/X (sky130_fd_sc_hd__mux2_1)
+   0.323    2.200 v _6450_/X (sky130_fd_sc_hd__mux2_2)
+   0.166    2.366 v place956/X (sky130_fd_sc_hd__buf_4)
+   0.264    2.630 ^ _9126_/SUM (sky130_fd_sc_hd__ha_1)
+   0.124    2.754 ^ _5278_/X (sky130_fd_sc_hd__a21o_1)
+   0.105    2.859 v _5279_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.593    3.452 ^ _5323_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.329    3.780 ^ _5369_/X (sky130_fd_sc_hd__and4_1)
+   0.207    3.987 v _5376_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.812    4.799 ^ _5478_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.277    5.076 v _5553_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.307    5.384 ^ _5576_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.147    5.530 v _5578_/Y (sky130_fd_sc_hd__nand2_1)
+   0.267    5.797 ^ _5582_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.102    5.900 v _5586_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.000    5.900 v reg_next_pc[28]$_SDFFE_PN0P_/D (sky130_fd_sc_hd__dfxtp_1)
+            5.900   data arrival time
+
+   5.500    5.500   clock clk (rise edge)
+   0.782    6.282   clock network delay (propagated)
+   0.000    6.282   clock reconvergence pessimism
+            6.282 ^ reg_next_pc[28]$_SDFFE_PN0P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.114    6.168   library setup time
+            6.168   data required time
+-----------------------------------------------------------
+            6.168   data required time
+           -5.900   data arrival time
+-----------------------------------------------------------
+            0.268   slack (MET)
+
+
+wns max 0.00
+tns max 0.00

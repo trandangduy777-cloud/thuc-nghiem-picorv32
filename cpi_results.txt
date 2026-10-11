@@ -1,0 +1,20 @@
+######## wait=0  (0: bo nho tra loi ngay, 1: co 1 chu ky cho)
+prog       ket_qua=55  chu_ky=121  lan_nap_lenh=43  count_instr=33
+p_alu_imm  ket_qua=0  chu_ky=307  lan_nap_lenh=102  count_instr=101
+p_alu_reg  ket_qua=0  chu_ky=310  lan_nap_lenh=103  count_instr=102
+p_load     ket_qua=0  chu_ky=507  lan_nap_lenh=102  count_instr=101
+p_store    ket_qua=0  chu_ky=507  lan_nap_lenh=102  count_instr=101
+p_br_nt    ket_qua=0  chu_ky=307  lan_nap_lenh=102  count_instr=101
+p_br_t     ket_qua=0  chu_ky=507  lan_nap_lenh=202  count_instr=101
+p_jal      ket_qua=0  chu_ky=307  lan_nap_lenh=102  count_instr=101
+p_shift    ket_qua=0  chu_ky=610  lan_nap_lenh=103  count_instr=102
+######## wait=1  (0: bo nho tra loi ngay, 1: co 1 chu ky cho)
+prog       ket_qua=55  chu_ky=165  lan_nap_lenh=43  count_instr=33
+p_alu_imm  ket_qua=0  chu_ky=410  lan_nap_lenh=102  count_instr=101
+p_alu_reg  ket_qua=0  chu_ky=414  lan_nap_lenh=103  count_instr=102
+p_load     ket_qua=0  chu_ky=710  lan_nap_lenh=102  count_instr=101
+p_store    ket_qua=0  chu_ky=710  lan_nap_lenh=102  count_instr=101
+p_br_nt    ket_qua=0  chu_ky=410  lan_nap_lenh=102  count_instr=101
+p_br_t     ket_qua=0  chu_ky=710  lan_nap_lenh=202  count_instr=101
+p_jal      ket_qua=0  chu_ky=410  lan_nap_lenh=102  count_instr=101
+p_shift    ket_qua=0  chu_ky=614  lan_nap_lenh=103  count_instr=102

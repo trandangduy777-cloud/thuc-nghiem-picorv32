@@ -1,0 +1,5 @@
+WARNING: tb.v:13: $readmemh(prog.hex): Not enough words in the file for the requested range [0:255].
+VCD info: dumpfile wave.vcd opened for output.
+Tong 1..10 = 55 (0x00000037)
+So chu ky = 164, so lenh = 33, CPI = 4.969697
+tb.v:30: $finish called at 1795000 (1ps)

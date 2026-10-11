@@ -1,0 +1,47 @@
+Startpoint: latched_store$_SDFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: reg_next_pc[31]$_SDFFE_PN0P_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   1.429    1.429   clock network delay (propagated)
+   0.000    1.429 ^ latched_store$_SDFFE_PN0P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.636    2.065 ^ latched_store$_SDFFE_PN0P_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.475    2.540 ^ place824/X (sky130_fd_sc_hd__buf_4)
+   1.335    3.876 ^ _5105_/X (sky130_fd_sc_hd__and2_1)
+   0.926    4.802 v _6427_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.933    5.735 ^ _9123_/SUM (sky130_fd_sc_hd__ha_1)
+   0.218    5.954 v _4774_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.523    6.477 ^ _4796_/Y (sky130_fd_sc_hd__nor2_1)
+   0.668    7.145 ^ _4861_/X (sky130_fd_sc_hd__o22a_1)
+   0.528    7.673 v _4939_/Y (sky130_fd_sc_hd__a31oi_1)
+   1.456    9.129 ^ _4995_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.482    9.611 v _5172_/Y (sky130_fd_sc_hd__nor3_1)
+   0.257    9.868 ^ _5250_/Y (sky130_fd_sc_hd__nor2_1)
+   0.292   10.160 v _5294_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.292   10.453 ^ _5305_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.621   11.074 v _6605_/Y (sky130_fd_sc_hd__a21oi_1)
+   1.420   12.494 v _6661_/X (sky130_fd_sc_hd__or4_1)
+   0.267   12.762 ^ _6738_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.000   12.762 ^ reg_next_pc[31]$_SDFFE_PN0P_/D (sky130_fd_sc_hd__dfxtp_1)
+           12.762   data arrival time
+
+  10.000   10.000   clock clk (rise edge)
+   1.422   11.422   clock network delay (propagated)
+   0.000   11.422   clock reconvergence pessimism
+           11.422 ^ reg_next_pc[31]$_SDFFE_PN0P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.171   11.252   library setup time
+           11.252   data required time
+-----------------------------------------------------------
+           11.252   data required time
+          -12.762   data arrival time
+-----------------------------------------------------------
+           -1.510   slack (VIOLATED)
+
+
+wns max -1.51
+tns max -4.31

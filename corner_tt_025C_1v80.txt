@@ -1,0 +1,35 @@
+Startpoint: latched_store$_SDFFE_PN0P_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: mem_la_addr[30] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+   Delay     Time   Description
+-----------------------------------------------------------
+   0.000    0.000   clock clk (rise edge)
+   0.832    0.832   clock network delay (propagated)
+   0.000    0.832 ^ latched_store$_SDFFE_PN0P_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.307    1.138 ^ latched_store$_SDFFE_PN0P_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.272    1.410 ^ place824/X (sky130_fd_sc_hd__buf_4)
+   0.785    2.196 ^ _5105_/X (sky130_fd_sc_hd__and2_1)
+   0.456    2.652 ^ place787/X (sky130_fd_sc_hd__buf_4)
+   0.113    2.765 v _6012_/Y (sky130_fd_sc_hd__nand2_1)
+   0.686    3.451 ^ _6014_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.615    4.066 ^ output225/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.000    4.066 ^ mem_la_addr[30] (out)
+            4.066   data arrival time
+
+  10.000   10.000   clock clk (rise edge)
+   0.000   10.000   clock network delay (propagated)
+   0.000   10.000   clock reconvergence pessimism
+  -2.000    8.000   output external delay
+            8.000   data required time
+-----------------------------------------------------------
+            8.000   data required time
+           -4.066   data arrival time
+-----------------------------------------------------------
+            3.934   slack (MET)
+
+
+wns max 0.00
+tns max 0.00

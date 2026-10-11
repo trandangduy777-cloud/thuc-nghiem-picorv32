@@ -1,0 +1,29 @@
+
+4. Printing statistics.
+
+=== picorv32 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+     1408 wires
+     3432 wire bits
+      109 public wires
+      885 public wire bits
+       27 ports
+      409 port bits
+     1840 cells
+        1   $buf
+        1   BUFG
+       64   CARRY4
+      430   FDRE
+        3   FDSE
+      102   IBUF
+        7   INV
+      213   LUT2
+       74   LUT3
+      131   LUT4
+      402   LUT5
+       93   LUT6
+      307   OBUF
+       12   RAM32M
+
