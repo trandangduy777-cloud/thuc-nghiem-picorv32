@@ -1,3 +1,4 @@
+# Chay trong thu muc flow/ cua OpenROAD-flow-scripts: LIB=<file .lib> openroad -exit <file nay>
 read_liberty $::env(LIB)
 read_db ./results/sky130hd/picorv32/base/6_final.odb
 read_sdc ./results/sky130hd/picorv32/base/6_final.sdc

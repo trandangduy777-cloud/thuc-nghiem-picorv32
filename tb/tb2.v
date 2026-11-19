@@ -18,7 +18,7 @@ module tb2;
   integer wait_mode, i;
   initial begin
     for (i = 0; i < 256; i = i + 1) mem[i] = 32'h0;
-    if (!$value$plusargs("hex=%s", hexfile)) hexfile = "prog.hex";
+    if (!$value$plusargs("hex=%s", hexfile)) hexfile = "programs/prog.hex";
     if (!$value$plusargs("wait=%d", wait_mode)) wait_mode = 1;   // 1: 1 chu ky cho, 0: tra loi ngay
     $readmemh(hexfile, mem);
     if ($test$plusargs("vcd")) begin $dumpfile("wave2.vcd"); $dumpvars(0, tb2); end

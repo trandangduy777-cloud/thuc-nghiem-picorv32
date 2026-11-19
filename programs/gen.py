@@ -1,4 +1,6 @@
-# Tao cac chuong trinh thu RV32I (dich tay bang Python) -> file .hex
+# Tao cac chuong trinh thu RV32I (dich tay bang Python) -> file .hex, ghi canh file nay (programs/)
+import os
+HERE = os.path.dirname(os.path.abspath(__file__))
 def r(f7,rs2,rs1,f3,rd,op): return (f7<<25)|(rs2<<20)|(rs1<<15)|(f3<<12)|(rd<<7)|op
 def i(imm,rs1,f3,rd,op): return ((imm&0xFFF)<<20)|(rs1<<15)|(f3<<12)|(rd<<7)|op
 def s(imm,rs2,rs1,f3,op=0x23): return (((imm>>5)&0x7F)<<25)|(rs2<<20)|(rs1<<15)|(f3<<12)|((imm&0x1F)<<7)|op
@@ -22,7 +24,7 @@ N=100
 def prog(name,body):
     code=body+[sw(0,0,256),jal(0,0)]       # sw x0,256(x0) : danh dau ket thuc
     assert len(code)*4<0x200
-    with open(name,'w') as f:
+    with open(os.path.join(HERE, name),'w') as f:
         for w in code: f.write('%08X\n'%w)
         f.write('@80\n00000000\n')         # o du lieu tai 0x200 cho lenh lw
 prog('p_alu_imm.hex',[addi(1,1,1)]*N)

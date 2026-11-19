@@ -10,7 +10,7 @@ module tb;
     .mem_addr(mem_addr), .mem_wdata(mem_wdata), .mem_wstrb(mem_wstrb), .mem_rdata(mem_rdata));
 
   reg [31:0] mem [0:255];
-  initial $readmemh("prog.hex", mem);
+  initial $readmemh("programs/prog.hex", mem);
   integer cycles = 0;
   always @(posedge clk) if (resetn) cycles <= cycles + 1;
 

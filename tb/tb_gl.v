@@ -13,7 +13,7 @@ module tb_gl;
   reg [31:0] mem [0:255]; integer i;
   initial begin
     for (i = 0; i < 256; i = i + 1) mem[i] = 32'h0;
-    $readmemh("prog.hex", mem);
+    $readmemh("programs/prog.hex", mem);
     $dumpfile("wave_gl.vcd"); $dumpvars(0, tb_gl.dut);
   end
   always @(posedge clk) begin
