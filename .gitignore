@@ -2,3 +2,10 @@
 sky130.lib
 *.o
 *.out
+# file sinh ra khi chay
+sim
+sim2
+gl_*
+*.log
+log_*.txt
+pw_*.tcl
